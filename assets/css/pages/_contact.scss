@@ -1,0 +1,36 @@
+.wrapper.contact {
+  font-size: 1.05rem;
+
+  .feedback-form {
+    textarea {
+      overflow: auto;
+    }
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    > * {
+      margin: 5px;
+    }
+
+    span {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 90%;
+      max-width: 440px;
+    }
+
+    .submit-btn {
+      background: #5c5b5b;
+      width: 150px;
+      text-align: center;
+      padding: 5px 12px;
+      color: #fff;
+
+      &:hover {
+        cursor: pointer;
+        background: #313131;
+      }
+    }
+  }
+}

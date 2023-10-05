@@ -1,0 +1,217 @@
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./assets/css/index.scss ***!
+  \********************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap);
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./assets/css/index.scss (1) ***!
+  \************************************************************************************************************************************************/
+@charset "UTF-8";
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 500;
+  background-color: #dd7859;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  user-select: none;
+  background-color: #dd7859;
+  color: white;
+  flex: 0 1;
+  padding: 10px 150px;
+}
+footer * {
+  margin-left: 10px;
+}
+footer * :not(:first-child) {
+  margin-left: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .info {
+  font-style: italic;
+  cursor: pointer;
+}
+body .info::before {
+  content: "↪";
+  border: rgba(28, 28, 28, 0.38) solid 1px;
+  padding: 2px 3px;
+  margin-right: 5px;
+}
+body a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+body a::after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 1px;
+  bottom: 2px;
+  opacity: 1;
+  margin: 0 auto 0 0;
+}
+body .nav-button {
+  text-align: center;
+  user-select: none;
+  font-weight: bold;
+}
+body .nav-button p {
+  display: flex;
+}
+body .nav-button * {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  letter-spacing: 2px;
+  text-align: center;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+body .nav-button *::after {
+  content: "";
+  position: relative;
+  width: calc(1ch + 1px);
+  height: 1px;
+  bottom: 2px;
+  background-color: #000000;
+  opacity: 0.8;
+  transition: width 450ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  margin: 0 auto 0 0;
+}
+body .nav-button.active ::after {
+  width: 100%;
+}
+body .nav-button:hover {
+  cursor: pointer;
+}
+body .nav-button:hover > p::after, body .nav-button:focus > p::after {
+  width: 100%;
+  transition: width 300ms;
+}
+body .button {
+  background-color: #626161;
+  max-width: fit-content;
+  padding: 4px 10px;
+  color: white;
+}
+body .button:hover {
+  cursor: pointer;
+  background-color: #383838;
+}
+body .wrapper {
+  padding: 15px;
+  flex: 1;
+  margin: 2px 150px 0 150px;
+}
+
+.photo-block {
+  display: flex;
+  flex-direction: row;
+}
+.photo-block img {
+  margin-left: 15px;
+}
+
+.cv-block {
+  display: flex;
+}
+.cv-block a {
+  color: black;
+}
+.cv-block a::after {
+  background-color: #F56553;
+}
+
+body.projects > .wrapper.projects .projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+body.projects > .wrapper.projects .projects-container .project {
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+}
+body.projects > .wrapper.projects .projects-container .project .name {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  font-size: 1.35rem;
+  padding: 6px;
+  border-radius: 8px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+body.projects > .wrapper.projects .projects-container .project .image {
+  border-radius: 20px;
+  height: auto;
+  min-height: 380px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.projects > .wrapper.projects .projects-container .project.proj1 .image {
+  background-image: url("/favicon.png");
+}
+body.projects > .wrapper.projects .projects-container .project.proj2 .image {
+  background-image: url("/favicon.png");
+}
+body.projects > .wrapper.projects .projects-container .project.proj3 .image {
+  background-image: url("/favicon.png");
+}
+body.projects > .wrapper.projects .projects-container .project .position {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  padding-top: 16px;
+  padding-left: 8px;
+}
+
+.wrapper.contact {
+  font-size: 1.05rem;
+}
+.wrapper.contact .feedback-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.wrapper.contact .feedback-form textarea {
+  overflow: auto;
+}
+.wrapper.contact .feedback-form > * {
+  margin: 5px;
+}
+.wrapper.contact .feedback-form span {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90%;
+  max-width: 440px;
+}
+.wrapper.contact .feedback-form .submit-btn {
+  background: #5c5b5b;
+  width: 150px;
+  text-align: center;
+  padding: 5px 12px;
+  color: #fff;
+}
+.wrapper.contact .feedback-form .submit-btn:hover {
+  cursor: pointer;
+  background: #313131;
+}
+
+/*# sourceMappingURL=public.css.map*/

@@ -1,0 +1,32 @@
+{
+  "name": "assignment1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build": "webpack --env=MODE=production",
+    "dev": "webpack --watch --env=MODE=development",
+    "production": "webpack --env=MODE=production"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "ejs": "~3.1.7",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "http-errors": "^2.0.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "morgan": "^1.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
